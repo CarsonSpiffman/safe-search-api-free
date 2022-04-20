@@ -7,7 +7,7 @@ API To check if an image is safe or not via Google Cloud without rate limit and 
 ```python
 from safe import SafeContentAPI
 
-url = 'https://www.chaty.es/uploads/2021/fotos-de-tetas-amateur-1250.jpg' # NSWF PHOTO
+url = 'https://www.chaty.es/uploads/2021/fotos-de-tetas-amateur-1250.jpg' # NSFW PHOTO
 safe = SafeContentAPI(url)
 print(safe.get_json())
 ```
