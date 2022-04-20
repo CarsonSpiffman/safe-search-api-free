@@ -16,8 +16,8 @@ class SafeContentAPI:
     Sends a POST request with the URL to be verified
     And returns a JSON with the verification result
     '''
-    def __init__(self, url):
-        self.url = url
+    def __init__(self, image_url):
+        self.url = image_url
         self.headers = {'Content-Type': 'application/x-www-form-urlencoded'}
         self.data = f"imageURL={self.url}"
         self.response = requests.post('https://carsonspiffman-safecontent-checker.000webhostapp.com/s.php', headers=self.headers, data=self.data)
